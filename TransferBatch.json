@@ -1,0 +1,152 @@
+{
+    "@odata.context": "http://localhost/sit-svc/application/AppU4DM/odata/$metadata#WorkOrder(Name,Notes,InitialQuantity,Status,WorkOrderOperations(ToBeUsedMachines(),ToBeConsumedMaterials(),Successors(DependencyType,PartialCompleted,ToWOO(Id))))",
+    "value": [
+        {
+            "Name": "DR07_Name",
+            "Notes": "TransferBatch",
+            "InitialQuantity": 9.000,
+            "Status": "New",
+            "ProductionType":"TransferBatch",
+            "WorkOrderOperations": [
+                {
+                    "Id": "0da30a4d-b261-4563-a9c7-868caf89cfb3",
+                    "ActiveNonConformanceNr": null,
+                    "ActualEndTime": "2019-08-23T12:09:42.2067555Z",
+                    "ActualStartTime": "2019-08-23T12:09:42.2067555Z",
+                    "AvailableQuantity": 5.000,
+                    "Description": "",
+                    "ElectronicSignatureComplete": false,
+                    "ElectronicSignaturePause": false,
+                    "ElectronicSignatureStart": false,
+                    "EstimatedEndTime": "2019-08-23T12:09:42.2067555Z",
+                    "EstimatedStartTime": "2019-08-23T12:09:42.2067555Z",
+                    "LastPauseTime": null,
+                    "Name": "MachineSetup",
+                    "NId": "WOO_815fba03-7817-4164-90e2-909ee9641440",
+                    "OperationNId": "MachineSetup",
+                    "OperationRevision": "A",
+                    "OperationUId": "MachineSetup_A",
+                    "PartialWorkedQuantity": 0,
+                    "ProducedQuantity": 0,
+                    "RequiredCertificateNId": "",
+                    "ReworkedQuantity": 0,
+                    "RequiredInspectionRole": "",
+                    "ScrappedQuantity": 0,
+                    "TargetQuantity": 5.000,
+                    "PauseDuration_Ticks": null,
+                    "PauseDuration": null,
+                    "IsReady": true,
+                    "Optional": false,
+                    "Priority": 1,
+                    "Sequence": 10,
+                    "Skippable": false,
+                    "WaitingForInspection": false,
+                    "Status": "Open",
+                    "ToBeUsedMachines": [
+                        {
+                            "Machine": "Printing_Room"
+                        },
+                        {
+                            "Machine": "Printing_Room2"
+                        }
+                    ],
+                    "ToBeConsumedMaterials": [
+                        {
+                            "Name": "Powder001_Name",
+                            "NId": "Material1",
+                            "Quantity": 50.000,
+                            "AlternativeSelected": false,
+                            "Sequence": 1
+                        },
+                        {
+                            "Name": "Powder002_Name",
+                            "NId": "Material2",
+                            "Quantity": 5.000,
+                            "AlternativeSelected": false,
+                            "Sequence": 1
+                        }
+                    ],
+                    "Successors": [
+                        {
+                            "DependencyType": "AfterEnd",
+                            "PartialCompleted": null,
+                            "Id": "e54e9139-c315-4d92-9e0f-a267aa7fb576"
+                        }
+                    ],
+                    "ToBeProducedMaterials": [
+                        {
+                            "Quantity": 5.000,
+                            "Serial": ""
+                        }
+                    ],
+                    "ActualProducedMaterials": [
+
+                    ]
+                },
+                {
+                    "Id": "e54e9139-c315-4d92-9e0f-a267aa7fb576",
+                    "ActiveNonConformanceNr": 0,
+                    "ActualEndTime": null,
+                    "ActualStartTime": null,
+                    "AvailableQuantity": 5.000,
+                    "Description": "",
+                    "ElectronicSignatureComplete": false,
+                    "ElectronicSignaturePause": false,
+                    "ElectronicSignatureStart": false,
+                    "EstimatedEndTime": "2019-08-23T12:09:42.2067555Z",
+                    "EstimatedStartTime": "2019-08-23T12:09:42.2067555Z",
+                    "LastPauseTime": null,
+                    "Name": "Execution",
+                    "NId": "WOO_815fba03-7817-4164-90e2-909ee9641440",
+                    "OperationNId": "Execution",
+                    "OperationRevision": "A",
+                    "OperationUId": "Execution_A",
+                    "PartialWorkedQuantity": 0,
+                    "ProducedQuantity": 0,
+                    "RequiredCertificateNId": "",
+                    "ReworkedQuantity": 0,
+                    "RequiredInspectionRole": "",
+                    "ScrappedQuantity": 0,
+                    "TargetQuantity": 5.000,
+                    "PauseDuration_Ticks": null,
+                    "PauseDuration": null,
+                    "IsReady": false,
+                    "Optional": false,
+                    "Priority": 1,
+                    "Sequence": 10,
+                    "Skippable": false,
+                    "WaitingForInspection": false,
+                    "Status": "Open",
+                    "ToBeUsedMachines": [
+                        {
+                            "Machine": "Execution_Room"
+                        }
+                    ],
+                    "ToBeConsumedMaterials": [
+                        {
+                            "Name": "Material3",
+                            "NId": "Material3",
+                            "Quantity": 5.000,
+                            "AlternativeSelected": false,
+                            "Sequence": 1
+                        },
+                        {
+                            "Name": "Material5",
+                            "NId": "Material5",
+                            "Quantity": 50.000,
+                            "AlternativeSelected": false,
+                            "Sequence": 1
+                        }
+                    ],
+                    "Successors": [
+                    ],
+                    "ToBeProducedMaterials": [
+                    ],
+                    "ActualProducedMaterials": [
+
+                    ]
+                }
+            ]
+        }
+    ]
+}
